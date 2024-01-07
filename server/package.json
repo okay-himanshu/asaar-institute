@@ -2,9 +2,10 @@
   "name": "asaar-institute-backend",
   "version": "1.0.0",
   "description": "\"Asaar Institute Backend\"",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js"
   },
   "author": "Himanshu Tiwai",
   "license": "ISC",
