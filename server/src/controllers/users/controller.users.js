@@ -162,7 +162,7 @@ export default class handleUser {
           return response.sendJsonResponse(res, false, 401, "Invalid password");
         }
 
-        // If email and password are valid, generate a JWT token
+        // If email and password are valid, generate a JWT token.
         const token = jwt.sign({ id: user._id }, ENV_CONFIG.JWT_SECRET_KEY, {
           expiresIn: "7d",
         });
