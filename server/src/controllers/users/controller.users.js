@@ -129,7 +129,68 @@ export default class handleUser {
     }
   }
 
-  static login(req, res) {}
+  static async login(req, res) {
+    const { email, password } = req.body;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    try {
+      // Check if email and password are provided
+      if (email && password) {
+        // Checking if email is valid or not
+
+        if (!emailRegex.test(email)) {
+          return response.sendJsonResponse(
+            res,
+            false,
+            400,
+            "Invalid email format"
+          );
+        }
+
+        // Checking if the user exists with the given email
+        const user = await UserModel.findOne({ email });
+
+        if (!user) {
+          return response.sendJsonResponse(res, false, 404, "User not found");
+        }
+
+        // Checking if the provided password matches the hashed password in the database
+        const passwordMatch = bcryptPassword.compare(password, user.password);
+
+        if (!passwordMatch) {
+          return response.sendJsonResponse(res, false, 401, "Invalid password");
+        }
+
+        // If email and password are valid, generate a JWT token
+        const token = jwt.sign({ id: user._id }, ENV_CONFIG.JWT_SECRET_KEY, {
+          expiresIn: "7d",
+        });
+
+        // Send success response with JWT
+        return response.sendJsonResponse(res, true, 200, "Login successful", {
+          user: {
+            _id: user._id,
+            name: user.name,
+            email: user.email,
+            address: user.address,
+            createdAt: user.createdAt,
+            updatedAt: user.updatedAt,
+          },
+          token,
+        });
+      } else {
+        return response.sendJsonResponse(
+          res,
+          false,
+          400,
+          "Email and password are required"
+        );
+      }
+    } catch (error) {
+      return response.sendErrorResponse(res, error);
+    }
+  }
   static forgetPassword(req, res) {}
   static resetPassword(req, res) {}
   static logout(req, res) {}

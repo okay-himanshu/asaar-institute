@@ -6,5 +6,7 @@ export default class bcryptPassword {
     const hashedPassword = await bcrypt.hash(password, salt);
     return hashedPassword;
   }
-  static compare() {}
+  static compare(userPassword, databasePassword) {
+    return bcrypt.compare(userPassword, databasePassword);
+  }
 }
