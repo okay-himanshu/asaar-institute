@@ -13,19 +13,32 @@ body {
 }
 
 .transition-height {
-  max-height: 500px; /* Set a value that accommodates the content's maximum height */
+  max-height: 500px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  transition: max-height 0.3s ease-in-out;
 }
 
-/* ... (any other styles you may have) ... */
-
-/* Media query for small screens */
 @media (max-width: 767px) {
-  /* Apply transition effect only for small screens */
   .transition-height-small {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+    transition: max-height 0.3s ease-in-out;
   }
+}
+
+.nav-link-container {
+  position: relative;
+}
+
+.nav-children {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  
+  z-index: 1;
+}
+
+.nav-link-container:hover .nav-children {
+  display: block;
 }

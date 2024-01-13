@@ -24,7 +24,7 @@ export default function Header() {
       <Wrapper className="bg-color_black text-color_white flex items-start w-850:items-center uppercase justify-between  text-[10px] py-2.5">
         <section className="flex flex-col w-850:flex-row items-start w-850:items-center gap-3 w-850:gap-2.5 py-2 w-850:p-0 ">
           <div className="flex items-center gap-2">
-            <NavLink className="flex items-center gap-2 hover:text-color_yellow duration-150">
+            <NavLink className="flex items-center gap-2 hover:text-green-600 duration-150">
               <FaHome size={12} />
               <h1 className="letter-spacing">Home </h1>
             </NavLink>
@@ -45,20 +45,20 @@ export default function Header() {
 
           <div
             className={`${
-              toggle ? "hidden w-850:flex" : "flex"
+              toggle ? "flex " : "hidden w-850:flex"
             } flex-col gap-2 items-start w-850:flex-row w-850:items-center w-850:gap-4 `}
           >
-            <NavLink className="pt-2 w-850:pt-0 flex items-center gap-2 hover:text-color_yellow duration-150">
+            <NavLink className="pt-2 w-850:pt-0 flex items-center gap-2 hover:text-green-600 duration-150">
               <IoMdImage size={12} />
               <h1 className="letter-spacing"> gallery</h1>
             </NavLink>
             <div className="hidden w-850:block">|</div>
-            <NavLink className="flex items-center gap-2 hover:text-color_yellow duration-150">
+            <NavLink className="flex items-center gap-2 hover:text-green-600 duration-150">
               <IoNewspaper size={12} />
               <h1 className="letter-spacing">news room</h1>
             </NavLink>
             <div className="hidden w-850:block  ">|</div>
-            <NavLink className="flex items-center gap-2 hover:text-color_yellow duration-150">
+            <NavLink className="flex items-center gap-2 hover:text-green-600 duration-150">
               <IoIosPeople size={12} />
               <h1 className="letter-spacing">employee zone</h1>
             </NavLink>
@@ -79,10 +79,10 @@ export default function Header() {
         </section>
 
         <section
-          className="w-850:hidden pt-3  text-base"
+          className="w-850:hidden pt-3  text-base cursor-pointer"
           onClick={handleToggle}
         >
-          {toggle ? <IoIosArrowDown /> : <IoIosArrowUp />}
+          {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </section>
       </Wrapper>
     </>
