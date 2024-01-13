@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "../pages";
-import { Navbar } from "../components";
+import { Header, Navbar } from "../components";
 
 export default function Router() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Header />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

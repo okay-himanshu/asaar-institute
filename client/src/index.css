@@ -7,3 +7,25 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.letter-spacing {
+  letter-spacing: 1.4px;
+}
+
+.transition-height {
+  max-height: 500px; /* Set a value that accommodates the content's maximum height */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* ... (any other styles you may have) ... */
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+  /* Apply transition effect only for small screens */
+  .transition-height-small {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+}
