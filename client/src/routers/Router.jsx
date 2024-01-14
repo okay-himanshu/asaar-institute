@@ -119,6 +119,7 @@ export default function Router() {
         <Header />
         <Navbar routes={routes} />
         <Routes>
+          <Route path="/" element={<Home />} />
           {routes.map((route, index) => (
             <Route key={index} path={route.path} element={route.element}>
               {route.children?.map((child, index) => (

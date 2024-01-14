@@ -35,10 +35,18 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  
+
   z-index: 1;
 }
 
 .nav-link-container:hover .nav-children {
   display: block;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-20 {
+  z-index: 20;
 }

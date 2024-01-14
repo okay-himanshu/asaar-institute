@@ -20,7 +20,7 @@ export default function Header() {
   const handleToggle = () => setToggle(!toggle);
 
   return (
-    <>
+    <main className="bg-color_black">
       <Wrapper className="bg-color_black text-color_white flex items-start w-850:items-center uppercase justify-between  text-[10px] py-2.5">
         <section className="flex flex-col w-850:flex-row items-start w-850:items-center gap-3 w-850:gap-2.5 py-2 w-850:p-0 ">
           <div className="flex items-center gap-2">
@@ -85,6 +85,6 @@ export default function Header() {
           {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </section>
       </Wrapper>
-    </>
+    </main>
   );
 }

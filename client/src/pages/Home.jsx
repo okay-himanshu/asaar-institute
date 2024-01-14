@@ -1,11 +1,9 @@
-import { Wrapper } from "../components";
+import { Hero, Wrapper } from "../components";
 
 export default function Home() {
   return (
-    <>
-      <Wrapper>
-        <section>hello home</section>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Hero />
+    </Wrapper>
   );
 }
