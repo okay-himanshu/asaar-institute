@@ -9,6 +9,10 @@ import aboutIconThree from "./icon-3.png";
 import aboutIconFour from "./icon-4.png";
 import aboutIconFive from "./icon-5.png";
 
+import app_store from "./app-store.png";
+import google_store from "./google-play.png";
+import iPhone from "./i-phone.png";
+
 export {
   picOne,
   picTwo,
@@ -19,4 +23,7 @@ export {
   aboutIconThree,
   aboutIconFour,
   aboutIconFive,
+  app_store,
+  google_store,
+  iPhone,
 };

@@ -36,7 +36,7 @@ export default function About() {
       <div className="mt-10">
         <h1 className="text-2xl font-semibold text-color_gray cursor-pointer flex items-center gap-2">
           Know about
-          <h1 className="text-3xl font-bold  ">ASAAR</h1>
+          <h1 className="text-3xl font-bold">ASAAR</h1>
         </h1>
       </div>
       <main className="mt-3 flex flex-col w-850:flex-row items-start xl:justify-between gap-2 text-sm text-color_black">
