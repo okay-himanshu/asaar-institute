@@ -51,3 +51,7 @@ body {
 .z-index-20 {
   z-index: 20;
 }
+
+.duration {
+  transition: border 0.3s ease-in-out;
+}

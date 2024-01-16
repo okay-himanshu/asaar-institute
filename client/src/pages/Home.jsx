@@ -4,9 +4,9 @@ import About from "./user/About";
 export default function Home() {
   return (
     <Wrapper>
-      <Hero />
+      {/* <Hero />
       <About />
-      <AppSection />
+      <AppSection /> */}
     </Wrapper>
   );
 }

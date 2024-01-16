@@ -13,7 +13,7 @@ import { BiSolidLogInCircle } from "react-icons/bi";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "../pages";
-import { Header, Navbar } from "../components";
+import { Footer, Header, Navbar } from "../components";
 
 export default function Router() {
   const routes = [
@@ -128,6 +128,7 @@ export default function Router() {
             </Route>
           ))}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

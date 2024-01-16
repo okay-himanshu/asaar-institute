@@ -5,5 +5,19 @@ import Header from "./Header";
 import Hero from "./Hero";
 import AboutCard from "./AboutCard";
 import AppSection from "./AppSection";
+import Footer from "./Footer";
+import FooterLocation from "./FooterLocation";
+import FooterSocials from "./FooterSocials";
 
-export { Navbar, Button, Wrapper, Header, Hero, AboutCard, AppSection };
+export {
+  Navbar,
+  Button,
+  Wrapper,
+  Header,
+  Hero,
+  AboutCard,
+  AppSection,
+  Footer,
+  FooterLocation,
+  FooterSocials,
+};
