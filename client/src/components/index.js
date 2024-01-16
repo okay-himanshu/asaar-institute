@@ -8,6 +8,7 @@ import AppSection from "./AppSection";
 import Footer from "./Footer";
 import FooterLocation from "./FooterLocation";
 import FooterSocials from "./FooterSocials";
+import EmailUs from "./EmailUs";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Footer,
   FooterLocation,
   FooterSocials,
+  EmailUs,
 };

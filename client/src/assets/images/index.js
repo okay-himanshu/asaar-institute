@@ -13,6 +13,7 @@ import app_store from "./app-store.png";
 import google_store from "./google-play.png";
 import iPhone from "./i-phone.png";
 
+import email_icon from "./email_icon.png";
 export {
   picOne,
   picTwo,
@@ -26,4 +27,5 @@ export {
   app_store,
   google_store,
   iPhone,
+  email_icon,
 };

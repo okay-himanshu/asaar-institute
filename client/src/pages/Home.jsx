@@ -1,12 +1,13 @@
-import { AppSection, Hero, Wrapper } from "../components";
+import { AppSection, EmailUs, Hero, Wrapper } from "../components";
 import About from "./user/About";
 
 export default function Home() {
   return (
     <Wrapper>
-      {/* <Hero />
+      <Hero />
       <About />
-      <AppSection /> */}
+      <AppSection />
+      <EmailUs />
     </Wrapper>
   );
 }
