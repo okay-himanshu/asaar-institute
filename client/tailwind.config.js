@@ -12,6 +12,7 @@ export default {
       md: "768px",
       "w-850": "850px",
       lg: "1024px",
+      "w-1150": "1150px",
       xl: "1280px",
       "2xl": "1536px",
     },

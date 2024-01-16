@@ -1,4 +1,4 @@
-import { App, Hero, Wrapper } from "../components";
+import { AppSection, Hero, Wrapper } from "../components";
 import About from "./user/About";
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <Wrapper>
       <Hero />
       <About />
-      <App />
+      <AppSection />
     </Wrapper>
   );
 }

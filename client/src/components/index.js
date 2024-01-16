@@ -4,6 +4,6 @@ import Button from "./Button";
 import Header from "./Header";
 import Hero from "./Hero";
 import AboutCard from "./AboutCard";
-import App from "./App";
+import AppSection from "./AppSection";
 
-export { Navbar, Button, Wrapper, Header, Hero, AboutCard, App };
+export { Navbar, Button, Wrapper, Header, Hero, AboutCard, AppSection };
