@@ -28,7 +28,7 @@ export default function Navbar({ routes }) {
             <div key={index} className="">
               <div
                 onClick={() => toggleSection(index)}
-                className="flex  items-center gap-2 cursor-pointer w-850:font-semibold border  rounded-md py-4 px-2 w-850:border-none  w-full  text-color_gray hover:text-green-600   duration-150"
+                className="flex  items-center gap-2 cursor-pointer w-850:font-semibold border  rounded-md py-4 px-2 w-850:border-none  w-full  text-color_gray hover:text-green-600   duration-150 text-xs w-440:text-sm"
               >
                 {route.icon} {route.name}
               </div>
@@ -43,7 +43,7 @@ export default function Navbar({ routes }) {
                     >
                       <div className=" w-full z-10 divide-y divide-gray-100  border border-gray-100 bg-white shadow-md w-850:shadow-lg">
                         <div className="py-1.5 px-4">
-                          <h1 className="flex w-full items-center gap-2 rounded-lg px-1 py-2 text-sm text-color_gray hover:bg-gray-50 hover:text-gray-700 pl-6 w-850:pl-0">
+                          <h1 className="flex w-full items-center gap-2 rounded-lg px-1 py-2  w-320:text-sm text-color_gray hover:bg-gray-50 hover:text-gray-700 pl-6 w-850:pl-0 text-xs w-440:text-sm">
                             {child.icon} {child.name}
                           </h1>
                         </div>

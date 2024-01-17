@@ -32,13 +32,13 @@ export default function Header() {
             <div className="flex items-center gap-2">
               <Button
                 icon={<MdOutlineLaptopMac size={12} />}
-                title={"Apply"}
-                className="w-850:hidden letter-spacing bg-red-500 rounded-full px-2 w-320:px-4 py-1 text-[10px] border-none uppercase "
+                title={"Enquiry"}
+                className="w-850:hidden letter-spacing bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full px-2 w-320:px-4 py-1 text-[10px] border-none uppercase "
               />
               <Button
                 title={"Login"}
                 icon={<RiLoginCircleFill />}
-                className="w-850:hidden letter-spacing bg-green-600 rounded-full  px-2 w-320:px-4 py-1 text-[10px] border-none uppercase "
+                className="w-850:hidden letter-spacing bg-green-600 rounded-full  px-1 w-320:px-4 py-1 text-[10px] border-none uppercase "
               />
             </div>
           </div>

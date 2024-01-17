@@ -6,7 +6,7 @@ import { PiBuildingsFill } from "react-icons/pi";
 import { Wrapper } from ".";
 export default function FooterLocation() {
   return (
-    <Wrapper className={"py-10"}>
+    <Wrapper className={"pt-10 pb-4"}>
       <hr />
       <div className="relative   py-5 text-color_white text-xs flex flex-col items-center w-440:flex-row  flex-wrap sm:flex-row   justify-between">
         <section className=" absolute top-9 left-0 w-500:static w-fit  ">

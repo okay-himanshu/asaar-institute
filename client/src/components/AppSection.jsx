@@ -1,7 +1,7 @@
 import { google_store, app_store, iPhone } from "../assets/images";
 export default function AppSection() {
   return (
-    <main className="flex flex-col w-850:flex-row justify-between  items-center mt-10 bg-white rounded-md shadow-2xl py-20 w-850:px-10 w-1150:px-32 xl:px-40">
+    <main className="flex flex-col w-850:flex-row justify-between  items-center mt-10 bg-white rounded-md shadow-lg py-20 w-850:px-10 w-1150:px-32 xl:px-40">
       <section className="w-500:w-[80%]  text-center w-850:w-[40%] w-850:text-start">
         <h1 className="text-3xl font-bold text-color_gray cursor-pointer flex items-center gap-2  rem]">
           Admission Information through ASAAR App

@@ -17,7 +17,7 @@ export default function About() {
     {
       image: aboutIconTwo,
       title: "3.3 Lac+",
-      description: "Students in OFFLINE Class ",
+      description: "Students in  Class ",
     },
     {
       image: aboutIconThree,
@@ -34,13 +34,13 @@ export default function About() {
   return (
     <>
       <div className="mt-10 mb-5">
-        <h1 className="text-xl w-440:text-2xl font-semibold text-color_gray cursor-pointer flex items-center gap-2">
+        <h1 className="text-xl w-440:text-2xl font-semibold text-color_gray  flex items-center gap-2">
           <FaRegHandshake className="text-2xl w-440:text-4xl" /> Know about
           <h1 className="text-xl w-440:text-3xl font-bold">ASAAR</h1>
         </h1>
       </div>
-      <main className="mt-3 flex flex-col w-850:flex-row items-start xl:justify-between gap-2 text-sm text-color_black">
-        <section className=" w-full w-850:w-4/6">
+      <main className="mt-3 flex flex-col w-850:flex-row items-center xl:justify-between gap-2 text-sm text-color_black">
+        <section className=" w-full w-850:w-5/6">
           <div className="mt-1">
             <p className="w-full">
               A Premier Coaching Institute for the preparation of JEE
@@ -63,7 +63,7 @@ export default function About() {
               to their social, cultural, academic and all-round development.
             </p>
 
-            <p className="mt-4">
+            <p className="mt-2">
               To our students, we impart value-based career education, abundant
               resources, and individual attention. To the parents, we have a
               responsibility to nurture ethical and responsible career

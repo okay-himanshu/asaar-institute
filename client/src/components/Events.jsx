@@ -31,7 +31,7 @@ export default function Events() {
   return (
     <>
       <div className="my-10 flex items-center justify-between flex-col w-320:flex-row ">
-        <h1 className="text-xl w-440:text-2xl font-semibold text-color_gray cursor-pointer flex items-center gap-2">
+        <h1 className="text-xl w-440:text-2xl font-semibold text-color_gray flex items-center gap-2">
           <MdEmojiEvents className="text-2xl w-440:text-4xl" /> Events At
           <h1 className="text-xl w-440:text-3xl font-bold">ASAAR</h1>
         </h1>
