@@ -1,13 +1,17 @@
-import { AppSection, EmailUs, Hero, Wrapper } from "../components";
+import { AppSection, EmailUs, Events, Hero, Wrapper } from "../components";
+import { eventImages } from "../components/EventImg";
 import About from "./user/About";
 
 export default function Home() {
   return (
-    <Wrapper>
-      <Hero />
-      <About />
-      <AppSection />
-      <EmailUs />
-    </Wrapper>
+    <main>
+      <Wrapper>
+        <Hero />
+        <About />
+        <Events />
+        <AppSection />
+        <EmailUs />
+      </Wrapper>
+    </main>
   );
 }

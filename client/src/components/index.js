@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import FooterLocation from "./FooterLocation";
 import FooterSocials from "./FooterSocials";
 import EmailUs from "./EmailUs";
+import Events from "./Events";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   FooterLocation,
   FooterSocials,
   EmailUs,
+  Events,
 };
