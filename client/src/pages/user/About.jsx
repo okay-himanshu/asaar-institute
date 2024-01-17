@@ -33,7 +33,7 @@ export default function About() {
 
   return (
     <>
-      <div className="my-10">
+      <div className="mt-10 mb-5">
         <h1 className="text-xl w-440:text-2xl font-semibold text-color_gray cursor-pointer flex items-center gap-2">
           <FaRegHandshake className="text-2xl w-440:text-4xl" /> Know about
           <h1 className="text-xl w-440:text-3xl font-bold">ASAAR</h1>
